@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+        overflow-x: hidden;
+    }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Buttons scale better */
+button {
+  font-size: 1em;
+  padding: 10px 20px;
+}
+
+/* Headings adapt */
+h1 {
+  font-size: 2em; /* smaller on mobile */
+}
+    h1 {
+      color: #ff007f;
+      text-shadow: 0 0 10px #ff007f;
+    }
+
+    .paragraph {
+      max-width: 700px;
+      margin: 30px auto;
+      font-size: 1.3em;
+      line-height: 1.8;
+      color: #ff4da6;
+      background: rgba(255, 0, 127, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 0, 127, 0.4);
+    }
+button{
+    background: #ff007f;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: #fff;
+      border-radius: 20px;
+      cursor: pointer;
+      margin: 20px;
+      transition: 0.3s;
+      position: relative;
+}
+button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #ff007f;}
+
+  </style>
+</head>
+<body>
+  <h1>My message 🌹</h1>
+
+  <div class="paragraph">
+    <p>
+      From the moment we met, my world changed.  
+      Every laugh, every call, everytime we were together —  
+      they all became memories etched deep inside my brain and also my heart. Composing the most beautiful and romantic story I've ever known.  
+      And I can’t wait to keep writing it with you for as long as my heart keeps beating,<br> I'll always choose YOU my baby 💕.
+    </p>
+    <br>
+    <p>
+      You are my favorite chapter, my plot twist,  
+      and the happy ending I never thought I’d find one day ✨. I really am so glad that you are my first girlfriend baby and I intend and really hope that you'll be my last too because I don't see myself with anyone else but you. 
+    </p>
+    <br>
+    <p> Be mine forever, baby? 💙</p>
+    <a href="yes.html"><button>Yes :3</button></a>
+<button id="noBtn" onmouseover="flyAway()">No 😢</button>
+  </div>
+
+   <script>
+
+   function flyAway() {
+      const noBtn = document.getElementById("noBtn");
+      const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+      const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+      noBtn.style.left = x + "px";
+      noBtn.style.top = y + "px";
+    }
+
+
+  </script>
+  
+</body>
+</html>

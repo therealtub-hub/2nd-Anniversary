@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yayyy! 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Buttons scale better */
+button {
+  font-size: 1em;
+  padding: 10px 20px;
+}
+
+/* Headings adapt */
+h1 {
+  font-size: 2em; /* smaller on mobile */
+}
+    h1 {
+      font-size: 3em;
+      color: #ff007f;
+      text-shadow: 0 0 15px #ff007f, 0 0 30px #ff4da6;
+      animation: glow 3s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff007f; }
+      to { text-shadow: 0 0 30px #ff4da6, 0 0 50px #ff007f; }
+    }
+
+    p {
+      font-size: 1.5em;
+      margin-top: 20px;
+      color: #ff4da6;
+      animation: glow 2s
+    }
+     .heart {
+      position: fixed;
+      font-size: 2em;
+      color: #ff4da6;
+      animation: floatUp 3s linear forwards;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-200px) scale(1.5); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+  <h1>Yayyy! 💕 You chose me!</h1>
+  <img src="image/cute.gif">
+  </div>
+  <p>Foreverrrr to infinity and beyonddd 🌹✨</p>
+  <p> no other guys.🔪</p>
+
+  <script>
+    function releaseHearts() {
+      for (let i = 0; i < 30; i++) {
+        let heart = document.createElement("div");
+        heart.className = "heart";
+        heart.innerHTML = "💜";
+        heart.style.left = Math.random() * window.innerWidth + "px";
+        heart.style.top = window.innerHeight + "px";
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+          heart.remove();
+        }, 3000);
+      }
+    }
+    window.onload = releaseHearts; 
+</script>
+</body>
+</html>
