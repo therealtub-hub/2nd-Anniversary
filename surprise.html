@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Memories 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      padding: 30px;
+      color: #ff007f;
+      text-shadow: 0 0 10px #ff007f;
+    }
+
+    .collage {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .collage img {
+      width: 100%;
+      height: 350px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 0, 127, 0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .collage img:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 20px rgba(255, 0, 127, 0.9);
+    }
+.photo {
+  text-align: center;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 127, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 127, 0.9);
+}
+
+.photo p {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #ff4da6;
+}
+    footer {
+      margin-top: 20px;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+button {
+
+      background: #ff007f;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: #fff;
+      border-radius: 30px;
+      cursor:pointer;
+      transition: 0.3s;
+}
+     .heart {
+      position: fixed;
+      font-size: 2em;
+      color: #ff4da6;
+      animation: floatUp 3s linear forwards;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-200px) scale(1.5); opacity: 0; }
+    }
+.gif img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Collage of Love 💕</h1>
+    <p>Every photo is a memory I treasure with you 🌹</p>
+  </header>
+
+<div class="collage">
+  <div class="photo">
+    <img src="image/74125D56-1B2B-4C37-9099-6B837D5F5E89_4_5005_c.jpeg" alt="Memory 1">
+    <p>Our first date 💕</p>
+  </div>
+
+  <div class="photo">
+    <img src="image/C139CA15-8F23-4227-B937-E73BF4409599_1_105_c.jpeg" alt="Memory 2">
+    <p>The first time we held hands 😆</p>
+  </div>
+
+  <div class="photo">
+    <img src="image/30BEE1FB-EB64-4251-9F5D-8A51B523989C_4_5005_c.jpeg" alt="Memory 3">
+    <p>Back to where we first met 🌊</p>
+  </div>
+
+  <div class="photo">
+    <img src="image/7374ED1E-2C9D-4FA7-B825-31458DE0891E_1_201_a.jpeg" alt="Memory 4">
+    <p>My beautiful princess 👸</p>
+  </div>
+
+  <div class="photo">
+    <img src="image/B28BE5DA-0523-438E-ACD9-AC5B020EDDE2_1_102_o.jpeg" alt="Memory 5">
+    <p>Jewel Date ✈️</p>
+  </div>
+
+  <div class="photo">
+    <img src="image/9625753E-900F-4AE4-9943-29C1CD446B93.jpeg" alt="Memory 6">
+    <p>First time I sleptover at your house  🌙</p>
+  </div>
+</div>
+<div class="gif">
+<img src="https://gifdb.com/images/high/mochi-cat-flying-kiss-ztkgcecwprh5w5og.gif" alt="w"
+</div>
+<a href="para.html"><button class>
+    Click here again hehe
+</button></a>
+
+  <footer>
+    <p>Made with ❤️ by me, for you.</p>
+  </footer>
+
+    <script>
+    function releaseHearts() {
+      for (let i = 0; i < 30; i++) {
+        let heart = document.createElement("div");
+        heart.className = "heart";
+        heart.innerHTML = "💜";
+        heart.style.left = Math.random() * window.innerWidth + "px";
+        heart.style.top = window.innerHeight + "px";
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+          heart.remove();
+        }, 3000);
+      }
+    }
+
+    window.onload = releaseHearts;
+  </script>
+</body>
+</html>
